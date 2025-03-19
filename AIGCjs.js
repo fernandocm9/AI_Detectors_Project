@@ -106,7 +106,7 @@ console.log("Sorted array:", array);
 
 
 
-//Calude - prompt: write a bubble sort algorithm in javascript
+//Claude - prompt: write a bubble sort algorithm in javascript
 function bubbleSort(arr) {
   const n = arr.length;
   
