@@ -1,0 +1,541 @@
+<!--Prompt used for all AI engines: Write a sample HTML code to create a list of agricultural produce a user can choose from to add to their grocery list.  --> 
+
+<!--ChatGPT-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+</head>
+<body>
+    <h2>Select Agricultural Produce for Your Grocery List</h2>
+    <form action="#" method="post">
+        <label>
+            <input type="checkbox" name="produce" value="Apples"> Apples
+        </label><br>
+        <label>
+            <input type="checkbox" name="produce" value="Bananas"> Bananas
+        </label><br>
+        <label>
+            <input type="checkbox" name="produce" value="Carrots"> Carrots
+        </label><br>
+        <label>
+            <input type="checkbox" name="produce" value="Tomatoes"> Tomatoes
+        </label><br>
+        <label>
+            <input type="checkbox" name="produce" value="Potatoes"> Potatoes
+        </label><br>
+        <label>
+            <input type="checkbox" name="produce" value="Lettuce"> Lettuce
+        </label><br>
+        <label>
+            <input type="checkbox" name="produce" value="Corn"> Corn
+        </label><br>
+        <label>
+            <input type="checkbox" name="produce" value="Strawberries"> Strawberries
+        </label><br>
+        <br>
+        <button type="submit">Add to Grocery List</button>
+    </form>
+</body>
+</html>
+
+
+<!--Gemini-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Produce to Grocery List</title>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Choose Your Produce</h1>
+
+  <form id="produceForm">
+    <ul>
+      <li><input type="checkbox" id="apple" name="produce" value="apple"> <label for="apple">Apple</label></li>
+      <li><input type="checkbox" id="banana" name="produce" value="banana"> <label for="banana">Banana</label></li>
+      <li><input type="checkbox" id="broccoli" name="produce" value="broccoli"> <label for="broccoli">Broccoli</label></li>
+      <li><input type="checkbox" id="carrot" name="produce" value="carrot"> <label for="carrot">Carrot</label></li>
+      <li><input type="checkbox" id="tomato" name="produce" value="tomato"> <label for="tomato">Tomato</label></li>
+      <li><input type="checkbox" id="lettuce" name="produce" value="lettuce"> <label for="lettuce">Lettuce</label></li>
+      <li><input type="checkbox" id="strawberry" name="produce" value="strawberry"> <label for="strawberry">Strawberry</label></li>
+      <li><input type="checkbox" id="potato" name="produce" value="potato"> <label for="potato">Potato</label></li>
+      <li><input type="checkbox" id="onion" name="produce" value="onion"> <label for="onion">Onion</label></li>
+      <li><input type="checkbox" id="cucumber" name="produce" value="cucumber"> <label for="cucumber">Cucumber</label></li>
+    </ul>
+
+    <button type="button" onclick="addToGroceryList()">Add to Grocery List</button>
+  </form>
+
+  <div id="groceryListContainer" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+    <h2>Your Grocery List</h2>
+    <ul id="groceryList">
+      </ul>
+  </div>
+
+  <script>
+    function addToGroceryList() {
+      const checkboxes = document.querySelectorAll('input[name="produce"]:checked');
+      const groceryList = document.getElementById('groceryList');
+      groceryList.innerHTML = ''; // Clear previous list
+
+      checkboxes.forEach(checkbox => {
+        const listItem = document.createElement('li');
+        listItem.textContent = checkbox.value;
+        groceryList.appendChild(listItem);
+      });
+
+      if (checkboxes.length > 0) {
+        alert('Selected produce added to your grocery list!');
+      } else {
+        alert('Please select at least one item to add.');
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+<!--Grok3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List - Agricultural Produce</title>
+    <style>
+        .produce-list {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+            color: #2e7d32;
+        }
+        .item {
+            margin: 10px 0;
+        }
+        button {
+            display: block;
+            margin: 15px auto 0;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="produce-list">
+        <h2>Select Your Produce</h2>
+        <form id="groceryForm">
+            <div class="item">
+                <input type="checkbox" id="apples" name="produce" value="Apples">
+                <label for="apples">Apples</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="bananas" name="produce" value="Bananas">
+                <label for="bananas">Bananas</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="carrots" name="produce" value="Carrots">
+                <label for="carrots">Carrots</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="potatoes" name="produce" value="Potatoes">
+                <label for="potatoes">Potatoes</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="tomatoes" name="produce" value="Tomatoes">
+                <label for="tomatoes">Tomatoes</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="lettuce" name="produce" value="Lettuce">
+                <label for="lettuce">Lettuce</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="corn" name="produce" value="Corn">
+                <label for="corn">Corn</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" id="broccoli" name="produce" value="Broccoli">
+                <label for="broccoli">Broccoli</label>
+            </div>
+            <button type="submit">Add to Grocery List</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('groceryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedItems = Array.from(this.querySelectorAll('input[name="produce"]:checked'))
+                .map(input => input.value);
+            if (selectedItems.length > 0) {
+                alert('Added to your grocery list:\n' + selectedItems.join('\n'));
+            } else {
+                alert('Please select at least one item!');
+            }
+        });
+    </script>
+</body>
+</html>
+
+<!--Claude-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Produce Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #336633;
+            text-align: center;
+        }
+        
+        .produce-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .produce-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .produce-item:hover {
+            background-color: #f0f8f0;
+        }
+        
+        .produce-item.selected {
+            background-color: #e0f0e0;
+            border-color: #336633;
+        }
+        
+        .category-heading {
+            grid-column: 1 / -1;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #336633;
+        }
+        
+        .grocery-list {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        
+        button {
+            background-color: #336633;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        
+        button:hover {
+            background-color: #2a552a;
+        }
+        
+        #list-items {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        #list-items li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .actions {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agricultural Produce Selection</h1>
+    
+    <div class="produce-container">
+        <h2 class="category-heading">Vegetables</h2>
+        <div class="produce-item" data-name="Tomatoes">Tomatoes</div>
+        <div class="produce-item" data-name="Potatoes">Potatoes</div>
+        <div class="produce-item" data-name="Onions">Onions</div>
+        <div class="produce-item" data-name="Carrots">Carrots</div>
+        <div class="produce-item" data-name="Lettuce">Lettuce</div>
+        <div class="produce-item" data-name="Spinach">Spinach</div>
+        <div class="produce-item" data-name="Bell Peppers">Bell Peppers</div>
+        <div class="produce-item" data-name="Broccoli">Broccoli</div>
+        
+        <h2 class="category-heading">Fruits</h2>
+        <div class="produce-item" data-name="Apples">Apples</div>
+        <div class="produce-item" data-name="Bananas">Bananas</div>
+        <div class="produce-item" data-name="Oranges">Oranges</div>
+        <div class="produce-item" data-name="Grapes">Grapes</div>
+        <div class="produce-item" data-name="Strawberries">Strawberries</div>
+        <div class="produce-item" data-name="Blueberries">Blueberries</div>
+        <div class="produce-item" data-name="Watermelon">Watermelon</div>
+        <div class="produce-item" data-name="Peaches">Peaches</div>
+        
+        <h2 class="category-heading">Grains</h2>
+        <div class="produce-item" data-name="Rice">Rice</div>
+        <div class="produce-item" data-name="Wheat">Wheat</div>
+        <div class="produce-item" data-name="Corn">Corn</div>
+        <div class="produce-item" data-name="Oats">Oats</div>
+        <div class="produce-item" data-name="Barley">Barley</div>
+        
+        <h2 class="category-heading">Others</h2>
+        <div class="produce-item" data-name="Eggs">Eggs</div>
+        <div class="produce-item" data-name="Honey">Honey</div>
+        <div class="produce-item" data-name="Milk">Milk</div>
+        <div class="produce-item" data-name="Cheese">Cheese</div>
+    </div>
+    
+    <div class="grocery-list">
+        <h2>Your Grocery List</h2>
+        <ul id="list-items">
+            <!-- Items will be added here -->
+        </ul>
+        <p id="empty-message">No items selected yet.</p>
+    </div>
+    
+    <div class="actions">
+        <button id="clear-list">Clear List</button>
+        <button id="print-list">Print List</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const produceItems = document.querySelectorAll('.produce-item');
+            const listItems = document.getElementById('list-items');
+            const emptyMessage = document.getElementById('empty-message');
+            const clearButton = document.getElementById('clear-list');
+            const printButton = document.getElementById('print-list');
+            
+            // Function to update empty message visibility
+            function updateEmptyMessage() {
+                if (listItems.children.length > 0) {
+                    emptyMessage.style.display = 'none';
+                } else {
+                    emptyMessage.style.display = 'block';
+                }
+            }
+            
+            // Add click event to produce items
+            produceItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const produceName = this.getAttribute('data-name');
+                    
+                    // Toggle selection visually
+                    this.classList.toggle('selected');
+                    
+                    // Check if item is already in list
+                    const existingItem = Array.from(listItems.children).find(li => 
+                        li.textContent.includes(produceName));
+                    
+                    if (this.classList.contains('selected')) {
+                        // Add to list if selected and not already there
+                        if (!existingItem) {
+                            const li = document.createElement('li');
+                            li.textContent = produceName;
+                            listItems.appendChild(li);
+                        }
+                    } else {
+                        // Remove from list if deselected
+                        if (existingItem) {
+                            listItems.removeChild(existingItem);
+                        }
+                    }
+                    
+                    updateEmptyMessage();
+                });
+            });
+            
+            // Clear list button
+            clearButton.addEventListener('click', function() {
+                // Clear the list
+                listItems.innerHTML = '';
+                
+                // Deselect all items
+                produceItems.forEach(item => {
+                    item.classList.remove('selected');
+                });
+                
+                updateEmptyMessage();
+            });
+            
+            // Print list button
+            printButton.addEventListener('click', function() {
+                if (listItems.children.length === 0) {
+                    alert('Please select some items first!');
+                    return;
+                }
+                
+                // Create a printable version
+                const printContent = Array.from(listItems.children)
+                    .map(li => li.textContent)
+                    .join('\n');
+                
+                const printWindow = window.open('', '_blank');
+                printWindow.document.write(`
+                    <html>
+                    <head>
+                        <title>My Grocery List</title>
+                        <style>
+                            body { font-family: Arial; line-height: 1.6; padding: 20px; }
+                            h1 { color: #336633; }
+                            ul { list-style-type: none; }
+                            li { padding: 5px 0; border-bottom: 1px solid #eee; }
+                            .print-date { color: #666; font-style: italic; margin-top: 30px; }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>My Grocery List</h1>
+                        <ul>
+                            ${Array.from(listItems.children).map(li => 
+                                `<li>${li.textContent}</li>`).join('')}
+                        </ul>
+                        <p class="print-date">Printed on ${new Date().toLocaleDateString()}</p>
+                    </body>
+                    </html>
+                `);
+                
+                printWindow.document.close();
+                printWindow.focus();
+                setTimeout(() => {
+                    printWindow.print();
+                }, 250);
+            });
+            
+            // Initialize empty message
+            updateEmptyMessage();
+        });
+    </script>
+</body>
+</html>
+
+<!--Perplexity-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List - Agricultural Produce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .produce-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .produce-item {
+            margin-bottom: 10px;
+        }
+        .produce-item label {
+            cursor: pointer;
+        }
+        .produce-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        #selected-items {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Agricultural Produce to Your Grocery List</h1>
+    <form id="grocery-form">
+        <ul class="produce-list">
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Tomatoes"> Tomatoes</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Carrots"> Carrots</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Lettuce"> Lettuce</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Potatoes"> Potatoes</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Cucumbers"> Cucumbers</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Bell Peppers"> Bell Peppers</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Onions"> Onions</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Apples"> Apples</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Bananas"> Bananas</label></li>
+            <li class="produce-item"><label><input type="checkbox" name="produce" value="Strawberries"> Strawberries</label></li>
+        </ul>
+        <button type="submit">Add to Grocery List</button>
+    </form>
+    <div id="selected-items"></div>
+
+    <script>
+        document.getElementById('grocery-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const selectedProduce = Array.from(document.querySelectorAll('input[name="produce"]:checked'))
+                .map(item => item.value);
+            document.getElementById('selected-items').textContent = 'Selected items: ' + selectedProduce.join(', ');
+        });
+    </script>
+</body>
+</html>
