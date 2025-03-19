@@ -4,6 +4,6 @@ This tool is to help educators have an idea of whether their students are partic
 We are going to be focusing on 5 Large Language Models (LLMs) to generate code based on a common prompt. We will then write human-generated code to match these prompts and run both sets of code through AI code detectors to see if these detectors can efficiently categorize code as human-generated or AI-generated.
 
 LLMs Used: ChatGPT, Gemini, Grok, Claude and Perplexity AI
-AI Generated Code Deteectors: GPTZero, Sapling, GPT-2 Detector, DetectGPT and Giant Language Model Test Room.
+AI Generated Code Detectors: GPTZero, Sapling, GPT-2 Detector, DetectGPT and Giant Language Model Test Room.
 
 
