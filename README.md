@@ -10,7 +10,7 @@ Sources: https://www.kaggle.com/code/amss10/detecting-llm-generated-code/input
 
 User Manual For Running Software (running_model.py)
 
-Ensure that the following libraries are installed on the host machine :
+1. Ensure that the following libraries are installed on the host machine :
 - Pandas - ```pip install pandas```
 - Seaborn -  ```pip install seaborn```
 - TensorFlow - ```pip install tensorflow```
@@ -19,11 +19,11 @@ Ensure that the following libraries are installed on the host machine :
 - Numpy - ```pip install numpy```
 - Natural Language Toolkit (NTLK) - ```pip install ntlk```
 
-Once these packages are installed, import the modules and necessary packages into your IDE and ensure they are compatible with your Python version (tested on Python3.11).
+2. Once these packages are installed, import the modules and necessary packages into your IDE and ensure they are compatible with your Python version (tested on Python3.11).
 - ```python3 sample_run.py```
 
-Before reading the data file, update the path of the file on line 33 to the absolute path on your local computer.
+3. Before reading the data file, update the path of the file on line 33 to the absolute path on your local computer.
 
-After editing the path of the file, run the code and wait for a result.
+4. After editing the path of the file, run the code and wait for a result.
 
-After you have received the confusion matrix as a result, save the image to your computer, and close out of the window.
+5. After you have received the confusion matrix as a result, save the image to your computer, and close out of the window.
