@@ -6,7 +6,7 @@ We are going to be focusing on 5 Large Language Models (LLMs) to generate code b
 LLMs Used: ChatGPT, Gemini, Grok, Claude and Perplexity AI
 AI Generated Code Detectors: GPTZero, Sapling, GPT-2 Detector, DetectGPT and Giant Language Model Test Room, ZeroGPT.
 
-Sources: https://www.kaggle.com/code/adofolimcdavid/detecting-llm-generated-code
+Sources: https://www.kaggle.com/code/adofolimcdavid/detecting-llm-generated-code](https://www.kaggle.com/code/amss10/detecting-llm-generated-code/input)
 
 User Manual For Running Software
 Esure that the following libraries are installed on the host machine :
