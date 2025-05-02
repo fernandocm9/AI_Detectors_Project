@@ -19,7 +19,7 @@ Esure that the following libraries are installed on the host machine :
 - Natural Language Toolkit (NTLK) - ```pip install ntlk```
 
 Once these packages are installed, import the modules and necessary packages into your IDE and ensure they are compatible with your Python version (tested on Python3.11).
-- ```python3 filename.py```
+- ```python3 sample_run.py```
 
 Before reading the data file, update the path of the file to the absolute path on your local computer.
 
