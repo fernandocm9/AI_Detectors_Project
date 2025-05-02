@@ -21,3 +21,8 @@ Esure that the following libraries are installed on the host machine :
 Once these packages are installed, import the modules and necessary packages into your IDE and ensure they are compatible with your Python version (tested on Python3.11).
 - ```python3 filename.py```
 
+Before reading the data file, update the path of the file to the absolute path on your local computer.
+
+After editing the path of the file, run the code and wait for a result.
+
+After you have received the confusion matrix as a result, save the image to your computer, and close out of the window.
