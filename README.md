@@ -8,3 +8,14 @@ AI Generated Code Detectors: GPTZero, Sapling, GPT-2 Detector, DetectGPT and Gia
 
 Sources: https://www.kaggle.com/code/adofolimcdavid/detecting-llm-generated-code
 
+User Manual For Running Software
+- Esure that the following libraries are installed on the host machine : 
+Pandas - ```pip install pandas```
+Seaborn -  ```pip install seaborn```
+TensorFlow - ```pip install tensorflow```
+scikit-learn - ```pip install sklearn```
+Matplotlib -  ```pip install matplotlib```
+Numpy - ```pip install numpy```
+Natural Language Toolkit (NTLK) - ```pip install ntlk```
+- Once these packages are installed, import the modules and necessary packages into your IDE and ensure they are compatible with your Python version.
+
