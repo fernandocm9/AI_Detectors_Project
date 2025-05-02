@@ -22,7 +22,7 @@ User Manual For Running Software (running_model.py)
 2. Once these packages are installed, import the modules and necessary packages into your IDE and ensure they are compatible with your Python version (tested on Python3.11).
 - ```python3 sample_run.py```
 
-3. Before reading the data file, update the path of the file on line 33 to the absolute path on your local computer.
+3. Before reading the data file, update the path of the file on line 33 to the absolute path on your local computer (your/path/goes/here/data.csv). 
 
 4. After editing the path of the file, run the code and wait for a result.
 
