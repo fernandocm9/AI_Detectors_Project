@@ -7,6 +7,7 @@ LLMs Used: ChatGPT, Gemini, Grok, Claude and Perplexity AI
 AI Generated Code Detectors: GPTZero, Sapling, GPT-2 Detector, DetectGPT and Giant Language Model Test Room, ZeroGPT.
 
 Sources: https://www.kaggle.com/code/amss10/detecting-llm-generated-code/input
+GitHub repo link: https://github.com/fernandocm9/AI_Detectors_Project
 
 User Manual For Running Software (running_model.py)
 
